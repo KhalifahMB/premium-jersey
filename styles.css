@@ -40,8 +40,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: auto;
-    margin: auto;
+    padding: 20px;
 }
 
 .jersey-card {
@@ -69,4 +68,32 @@ nav {
 
 .add-to-cart-button:hover {
     background-color: #E63A00;
+}
+
+.flying-imgage {
+  
+    position: absolute;
+    animation: fly_to_cart 1s ease-in-out;
+}
+
+@keyframes fly_to_cart {
+    0% {
+        left: 0;
+        top: 0;
+       
+    }
+    45%, 50% {
+        left: var(--left);
+        top: 60px;
+    }
+    80%, 90% {
+        left: var(--left);
+        top: var(--top);
+        transform: scale(.2);
+    }
+    100% {
+        left: calc(var(--left) + 40px);
+        top: var(--top);
+        transform: scale(2);
+    }
 }

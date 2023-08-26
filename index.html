@@ -10,7 +10,7 @@
     <header>
         <nav>
             <div class="logo">Premium Jerseys</div>
-            <div class="cart-icon">Cart <span class="cart-count">0</span></div>
+            <div class="cart-icon" onclick="toggleCart()">&#128722; <span class="cart-count" id="cart-count">0</span></div>
         </nav>
     </header>
     <main>
@@ -18,8 +18,8 @@
             <!-- Jersey Card Components will be added here -->
         </section>
     </main>
-    <div class="cart-modal">
-        <div class="cart-items">
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-items" id="cart-items">
             <!-- Cart items will be displayed here -->
         </div>
     </div>
