@@ -1,3 +1,15 @@
+const header = document.querySelector('#header')
+window.addEventListener('scroll', (e)=> {
+if (window.scrollY > 0){
+    header.style.position= 'fixed'
+    header.style.top= '0px'
+    header.style.right= '0px'
+    console.log(header.style.transform)
+}
+else {
+    header.style.position= null
+}
+})
 const cartModal = document.getElementById('cart-modal');
 const cartItems = document.getElementById('cart-items');
 const cartCount = document.getElementById('cart-count');
